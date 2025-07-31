@@ -1,0 +1,12 @@
+name: Deploy Reports to GitHub Pages
+
+on:
+  push:  # ← Trigger on any push to any branch
+
+jobs:
+  deploy-pages:
+    uses: AAYUSH2091/network.inventory_reports/.github/workflows/enable-pages.yml@main
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
